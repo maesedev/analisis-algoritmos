@@ -7,7 +7,7 @@ import pyperclip
 n = [1000,10000,100000,1000000,10000000]
 k = 50
 def gen_arr(n):
-    return [ np.random.random(10000000) for _ in range(n) ]
+    return [ np.random.random() for _ in range(n) ]
 
 
 def main ():
