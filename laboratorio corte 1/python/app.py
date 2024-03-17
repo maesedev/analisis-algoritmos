@@ -22,9 +22,11 @@ def main ():
         with open(file_name,"a") as f:
             f.write(f"n --> {cant_datos}\n")
             for i in range(k):
+
+                progress = f"({i + 1}/{k})"
                 
-                print(f"\nIteracion {i + 1}")
-                f.write(f"Iteracion {i + 1}\n")
+                print(f"\n{progress} Iteracion {i + 1}")
+                f.write(f"{progress} Iteracion {i + 1}\n")
 
                 arr = gen_arr(cant_datos )
 
