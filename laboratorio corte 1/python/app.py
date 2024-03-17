@@ -14,7 +14,7 @@ def main ():
     times = []
     for i in range(k):
         print(f"\nIteracion {i}")
-        arr = gen_arr(n [1] )
+        arr = gen_arr(n [2] )
 
         # print("Array original:", arr)
 
