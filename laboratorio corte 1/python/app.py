@@ -21,6 +21,7 @@ def main ():
         file_name = f"./sets/n_{cant_datos}_sets_{datetime.now()}.txt"  
         with open(file_name,"a") as f:
             f.write(f"n --> {cant_datos}\n")
+            print(f"n --> {cant_datos}\n")
             for i in range(k):
 
                 progress = f"({i + 1}/{k})"
