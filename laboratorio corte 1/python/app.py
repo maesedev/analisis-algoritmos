@@ -18,10 +18,15 @@ def format(float):
 def main ():
     times = []
     for cant_datos in n:
-        file_name = f"./sets/n_{cant_datos}_sets.txt"  
+        file_name = f"./sets/n_{cant_datos}_sets_{datetime.now().timestamp()}.txt"  
+
         with open(file_name,"a") as f:
             f.write(f"n --> {cant_datos}\n")
-            for i in range(k):
+
+        print(f"n --> {cant_datos}\n")
+        for i in range(k):
+
+            with open(file_name, "a") as f:
 
                 progress = f"({i + 1}/{k})"
                 
@@ -34,17 +39,15 @@ def main ():
 
                 # print("Array ordenado:", arr)
                 times.append(time)
-                f.write(f"iteration time: {format(time)} seconds\n")
+                f.write(f"Timeit time: {format(time)} seconds\n")
                 f.write(f"mean accmulated time: {format(sum(times) / len(times))} seconds\n")
                 
                 print(time,"sec")
             
-            
-            
             mean_time = sum(times) / len(times)
             print("mean Time: ", str(mean_time).replace(".",","))
 
-            f.write(f"mean Time for {cant_datos}: " +  str(mean_time).replace(".",",") + "\n\n")
+            f.write(f"mean Time for {cant_datos}: " +  str(mean_time).replace(".",",") + "")
 
 
 
