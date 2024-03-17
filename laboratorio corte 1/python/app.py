@@ -6,7 +6,7 @@ from datetime import datetime
 import pyperclip
 
 n = [1000,10000,100000,1000000,10000000]
-k = 50
+k = 5
 
 
 def gen_arr(n):
@@ -26,7 +26,7 @@ def main ():
         print(f"n --> {cant_datos}\n")
         for i in range(k):
 
-            with open(file_name, "a"):
+            with open(file_name, "a") as f:
 
                 progress = f"({i + 1}/{k})"
                 
@@ -34,7 +34,8 @@ def main ():
                 f.write(f"{progress} Iteracion {i + 1}\n")
 
                 arr = gen_arr(cant_datos )
-
+                
+                #Executing the sort 
                 time = timeit(lambda : merge_sort(arr), number = 30)
 
                 # print("Array ordenado:", arr)
@@ -46,8 +47,8 @@ def main ():
             
             mean_time = sum(times) / len(times)
             print("mean Time: ", str(mean_time).replace(".",","))
-
-            f.write(f"mean Time for {cant_datos}: " +  str(mean_time).replace(".",",") + "")
+            with open(file_name, "a" ) as f:
+                f.write(f"mean Time for {cant_datos}: " +  str(mean_time).replace(".",",") + "")
 
 
 
