@@ -45,8 +45,8 @@ def main ():
             
             mean_time = sum(times) / len(times)
             print("mean Time: ", str(mean_time).replace(".",","))
-            with open(file_name, "a" ) as f:
-                f.write(f"mean Time for {cant_datos}: " +  str(mean_time).replace(".",",") + "\n")
+        with open(file_name, "a" ) as f:
+            f.write(f"\n\nmean Time for {cant_datos}: " +  str(mean_time).replace(".",",") + "\n")
 
 
 
