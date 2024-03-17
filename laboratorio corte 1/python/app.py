@@ -18,7 +18,7 @@ def format(float):
 def main ():
     times = []
     for cant_datos in n:
-        file_name = f"./sets/n_{cant_datos}_sets_{datetime.now()}.txt"  
+        file_name = f"./sets/n_{cant_datos}_sets.txt"  
         with open(file_name,"a") as f:
             f.write(f"n --> {cant_datos}\n")
             for i in range(k):
