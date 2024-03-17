@@ -1,9 +1,7 @@
 from merge_sort import merge_sort 
 from timeit import timeit
 import numpy as np
-from os import path 
 from datetime import datetime
-import pyperclip
 
 n = [1000,10000,100000,1000000,10000000]
 k = 5
