@@ -1,4 +1,5 @@
 from merge_sort import merge_sort 
+from insertion_sort import insertion_sort
 from timeit import timeit
 import numpy as np
 from datetime import datetime
@@ -34,7 +35,7 @@ def main ():
                 arr = gen_arr(cant_datos )
                 
                 #Executing the sort 
-                time = timeit(lambda : merge_sort(arr), number = 30)
+                time = timeit(lambda : insertion_sort(arr), number = 30)
 
                 # print("Array ordenado:", arr)
                 times.append(time)
