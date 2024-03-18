@@ -53,5 +53,9 @@ def main ():
 
 
 if __name__ == "__main__":
-    main()
+    # main()
+    arr = [np.random.random() for _ in range(n[4])]
+    time = timeit(lambda : merge_sort(arr), number = 30)
+    print(time)
+
 

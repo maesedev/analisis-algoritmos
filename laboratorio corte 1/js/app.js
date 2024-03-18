@@ -25,9 +25,9 @@ function format(float) {
 function main() {
     const times = [];
     n.forEach(cant_datos => {
-        const file_name = `./sets/n_${cant_datos}_sets_${Date.now()}.txt`;
+        const file_name = `./sets/Merge_n_${cant_datos}_sets_${Date.now()}.txt`;
 
-        fs.appendFileSync(file_name, `n --> ${cant_datos}\n`);
+        fs.appendFileSync(file_name, `Merge_n --> ${cant_datos}\n`);
         console.log(`n --> ${cant_datos}\n`);
 
         for (let i = 0; i < k; i++) {
@@ -57,5 +57,16 @@ function main() {
     });
 }
 
-main();
+// main();
+
+
+const arr = genArr(10000000);
+console.log("Arreglo generado");
+const startTime = performance.now();
+insertionSort(arr);
+const endTime = performance.now();
+const time = (endTime - startTime) / 1000; 
+
+console.log(time);
+
 
