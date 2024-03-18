@@ -27,12 +27,3 @@ def merge_sort(arr):
             arr[k] = right_half[j]
             j += 1
             k += 1
-
-def main():
-    arr = [64, 34, 25, 12, 22, 11, 90]
-    print("Array original:", arr)
-    merge_sort(arr)
-    print("Array ordenado:", arr)
-
-if __name__ == "__main__":
-    main()
