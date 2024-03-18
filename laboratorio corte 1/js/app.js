@@ -39,7 +39,7 @@ function main() {
             const arr = genArr(cant_datos);
 
             const startTime = performance.now();
-            mergeSort(arr);
+            insertionSort(arr);
             const endTime = performance.now();
             const time = (endTime - startTime) / 1000; // convert to seconds
 
