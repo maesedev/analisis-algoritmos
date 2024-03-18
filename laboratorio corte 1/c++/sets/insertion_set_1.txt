@@ -1,0 +1,16 @@
+n --> 1000
+Insertion Sort Time: 0.001676 seconds
+
+
+n --> 10000
+Insertion Sort Time: 0.176946 seconds
+
+
+n --> 100000
+Insertion Sort Time: 16.400867 seconds
+
+
+n --> 1000000
+Insertion Sort Time: 1620.641916 seconds
+
+

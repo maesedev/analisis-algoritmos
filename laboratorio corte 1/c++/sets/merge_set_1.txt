@@ -1,0 +1,12 @@
+n --> 1000
+Merge Sort Time: 0.000631 seconds
+n --> 10000
+Merge Sort Time: 0.008026 seconds
+n --> 100000
+Merge Sort Time: 0.054876 seconds
+n --> 1000000
+Merge Sort Time: 0.640863 seconds
+n --> 10000000
+Merge Sort Time: 7.591014 seconds
+n --> 1000
+Insertion Sort Time: 0.001707 seconds

@@ -18,7 +18,7 @@ function format(float) {
 }
 
 function main() {
-    const fileName = `./sets/set_${Date.now()}.txt`;
+    const fileName = `./sets/merge_set_${Date.now()}.txt`;
 
     n.forEach(cantDatos => {
         console.log(`n --> ${cantDatos}\n`);
@@ -33,16 +33,16 @@ function main() {
         const endTimeMerge = performance.now();
         const timeMerge = (endTimeMerge - startTimeMerge) / 1000;
 
-        const startTimeInsertion = performance.now();
-        insertionSort(arr2);
-        const endTimeInsertion = performance.now();
-        const timeInsertion = (endTimeInsertion - startTimeInsertion) / 1000;
+        // const startTimeInsertion = performance.now();
+        // insertionSort(arr2);
+        // const endTimeInsertion = performance.now();
+        // const timeInsertion = (endTimeInsertion - startTimeInsertion) / 1000;
 
         fs.appendFileSync(fileName, `Merge Sort Time: ${format(timeMerge)} seconds\n`);
         console.log(`Merge Sort Time: ${format(timeMerge)} seconds\n`);
 
-        fs.appendFileSync(fileName, `Insertion Sort Time: ${format(timeInsertion)} seconds\n`);
-        console.log(`Insertion Sort Time: ${format(timeInsertion)} seconds\n`);
+        // fs.appendFileSync(fileName, `Insertion Sort Time: ${format(timeInsertion)} seconds\n`);
+        // console.log(`Insertion Sort Time: ${format(timeInsertion)} seconds\n`);
 
         fs.appendFileSync(fileName, `\n\n`);
     });
