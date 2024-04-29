@@ -1,6 +1,12 @@
 /laboratorio\ corte\ 1/python/__pycache__
 
-/laboratorio\ corte\ 1/python/sets/*
-/laboratorio\ corte\ 1/js/sets/*
+/laboratorio\ corte\ 1/*/sets/*
+
+/laboratorio\ corte\ 2/*/__pycache__
+
+/laboratorio\ corte\ 2/*/bin
+/laboratorio\ corte\ 2/*/obj
+/laboratorio\ corte\ 2/*/*.class
+/laboratorio\ corte\ 2/*/sets/*
 
 .vscode
